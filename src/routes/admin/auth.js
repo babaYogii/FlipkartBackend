@@ -12,7 +12,7 @@ const router = express.Router();
 router.post('/admin/signin',ValidateSigninRequest , isRequestValidated ,signin);
 
 router.post('/admin/signup',ValidateSignupRequest,isRequestValidated, signup);
-router.post('/admin/signout',requireSignin,signout);
+router.post('/admin/signout',signout);
 //added comment
 
 
